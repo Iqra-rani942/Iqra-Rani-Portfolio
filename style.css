@@ -1,4 +1,4 @@
-/* Reset */
+/* ================= RESET ================= */
 * {
   margin: 0;
   padding: 0;
@@ -6,14 +6,14 @@
   font-family: Arial, sans-serif;
 }
 
-/* Body */
+/* ================= BODY ================= */
 body {
   background-color: #142220;
   color: #ffffff;
   line-height: 1.6;
 }
 
-/* Navbar */
+/* ================= NAVBAR ================= */
 header {
   background: #30665F;
   padding: 15px 0;
@@ -52,7 +52,7 @@ nav ul li a.active {
   color: #F6D273;
 }
 
-/* Sections */
+/* ================= SECTIONS ================= */
 section {
   padding: 60px 10%;
 }
@@ -61,68 +61,151 @@ h1, h2 {
   margin-bottom: 20px;
 }
 
-/* Hero */
+/* ================= HERO ================= */
 #home {
   text-align: center;
   padding: 100px 20px;
 }
 
 #home h1 {
-  font-size: 40px;
+  font-size: 42px;
+}
+
+#home p {
+  font-size: 18px;
 }
 
 #home a {
   display: inline-block;
   margin-top: 20px;
-  padding: 10px 20px;
+  padding: 12px 25px;
   background: #F6D273;
   color: #142220;
   text-decoration: none;
   border-radius: 5px;
   font-weight: bold;
+  transition: 0.3s;
 }
 
-/* About */
+#home a:hover {
+  background: #e5c25f;
+}
+
+/* ================= ABOUT ================= */
 .about-page p {
   margin-bottom: 15px;
 }
 
-/* Skills */
+/* ================= SKILLS ================= */
 #skills ul,
 .about-page ul {
   list-style: square;
   margin-left: 20px;
 }
 
-/* Projects */
-.project {
-  background: #1e2f2c;
-  padding: 15px;
-  margin-bottom: 15px;
-  border-radius: 8px;
+/* ================= PROJECTS ================= */
+#projects {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
 }
 
-/* Services */
+.project {
+  background: #1e2f2c;
+  padding: 20px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+}
+
+.project h3 {
+  margin-bottom: 10px;
+}
+
+/* ================= SERVICES ================= */
 #services ul {
   list-style: none;
 }
 
 #services li {
   background: #1e2f2c;
-  padding: 10px;
+  padding: 12px;
   margin-bottom: 10px;
   border-radius: 5px;
 }
 
-/* Contact */
+/* ================= CONTACT ================= */
 #contact p {
   font-size: 18px;
 }
 
-/* Footer */
+/* ================= FOOTER ================= */
 footer {
   text-align: center;
   padding: 15px;
   background: #30665F;
   margin-top: 30px;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  #projects {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #home h1 {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  section {
+    padding: 40px 5%;
+  }
+
+  #home {
+    padding: 60px 10px;
+  }
+
+  #home h1 {
+    font-size: 26px;
+  }
+
+  #projects {
+    grid-template-columns: 1fr;
+  }
+
+  nav h2 {
+    font-size: 20px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  #home h1 {
+    font-size: 22px;
+  }
+
+  nav ul li a {
+    font-size: 14px;
+  }
 }
