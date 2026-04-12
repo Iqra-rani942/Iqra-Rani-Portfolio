@@ -1,0 +1,128 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Body */
+body {
+  background-color: #142220;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* Navbar */
+header {
+  background: #30665F;
+  padding: 15px 0;
+}
+
+nav {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h2 {
+  color: #F6D273;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #F6D273;
+}
+
+/* Sections */
+section {
+  padding: 60px 10%;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+/* Hero */
+#home {
+  text-align: center;
+  padding: 100px 20px;
+}
+
+#home h1 {
+  font-size: 40px;
+}
+
+#home a {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: #F6D273;
+  color: #142220;
+  text-decoration: none;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* About */
+.about-page p {
+  margin-bottom: 15px;
+}
+
+/* Skills */
+#skills ul,
+.about-page ul {
+  list-style: square;
+  margin-left: 20px;
+}
+
+/* Projects */
+.project {
+  background: #1e2f2c;
+  padding: 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* Services */
+#services ul {
+  list-style: none;
+}
+
+#services li {
+  background: #1e2f2c;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+/* Contact */
+#contact p {
+  font-size: 18px;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 15px;
+  background: #30665F;
+  margin-top: 30px;
+}
